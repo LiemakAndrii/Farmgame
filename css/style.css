@@ -1,0 +1,197 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fdfcef;
+  border-radius: 50px;
+}
+
+/* Header */
+.header {
+  padding: 60px 0 82px 0;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* First screen */
+.container {
+  width: 100%;
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 120px;
+  align-items: center;
+}
+
+.info__title {
+  max-width: 465px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.info__subtitle {
+  max-width: 423px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 136.7%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: linear-gradient(
+    to right,
+    #ff6861,
+    #ffbe2a,
+    #ffee00,
+    #00d4ff,
+    #8134af,
+    #ff6861
+  );
+  border-radius: 100px;
+  padding: 22px 70px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 136.7%;
+  color: black;
+  background-size: 200% auto;
+  transition: background-position 0.5s ease;
+}
+
+.btn:hover {
+  background-position: 100% 0;
+}
+
+/* Second screen */
+
+.about {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 70px;
+}
+
+.about__box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 41px;
+}
+
+.about__box-icon {
+  margin-right: 34px;
+}
+
+.about__box-text {
+  width: 100%;
+  max-width: 613px;
+}
+
+.about__box-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.about__box-subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136.7%;
+  color: #000000;
+}
+
+.third__screen .container {
+  background: linear-gradient(102deg, #fff6df 17.38%, #ffdfde 81.25%);
+  border-radius: 60px;
+  padding: 76px 122px;
+}
+
+.footer .container {
+  justify-content: center;
+}
+
+.run-icon {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.run-icon:hover {
+  transform: scale(1.4) rotate(20deg);
+  cursor: pointer;
+}
+
+.run-icon:hover::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+  animation: salut 0.8s ease-out;
+}
+
+@keyframes salut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.logo-bug:hover {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  cursor: help;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(4deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
